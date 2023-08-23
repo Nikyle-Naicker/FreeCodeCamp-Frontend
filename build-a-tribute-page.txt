@@ -1,0 +1,91 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+  <main id="main" >
+  <h1 id="title" >Digvijaysinhji Ranjitsinhji Jadeja</h1>
+  <figure id="img-div" >
+    <img id="image"  src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Maharaja_with_kids_and_women_from_Poland.jpg" Alt="Maharaja with children on Christmas Eve"/>
+    <figcaption id="img-caption" >Maharaja with children on Christmas Eve. 
+      </figcaption>
+      <figcaption id="tribute-info" class="center" >
+      <a id="tribute-link" target="_blank" href="https://commons.wikimedia.org/wiki/File:Maharaja_with_kids_and_women_from_Poland.jpg"> By Alewis2388</a>, <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+    </figcaption>
+  </figure>
+<ul>
+  <li>In 1942, he established the Polish Children's Camp in Jamnagar-Balachadi for refugee Polish children who were brought out of the USSR during World War II.</li>
+  <li>It existed until 1945, when it was closed and the children were transferred to Valivade, a quarter of the city of Kolhapur. The camp site today is part of 300 acre campus of the Sainik School, Balachadi. The Jamsaheb Digvijaysinh Jadeja School in Warsaw was established to honour this legacy. In 2016, 50 years after Jam Saheb's death, Poland's Parliament unanimously adopted a special resolution honouring Jam Saheb Digvijay Sinhji for his aid to Polish children refugees during World War II.</li>
+  <li>A documentary titled "Little Poland in India" was made in collaboration of both Indian and Polish governments to honour the efforts of Maharaja Jam Sahib and Kira Banasinska, who led the movement in India to rehabilitate Polish refugees. After independence of India, he signed the Instrument of Accession to the Dominion of India on 15 August 1947. He merged Nawanagar into the United State of Kathiawar the following year, serving as its Rajpramukh until the Government of India abolished the post in 1956.</li>
+</ul>
+<footer>
+  More Info on this Person on his <a  href="https://en.wikipedia.org/wiki/Digvijaysinhji_Ranjitsinhji_Jadeja" >Wikipedia Page</a>
+  </footer>
+  </main>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1 {
+  text-align: center;
+  background-color: #353839;
+  color:#e1f0ec;
+  text-decoration: underline;
+  width: 100%;
+  padding: 15px 0;
+}
+
+
+figure > figcaption {
+  display: block;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer {
+padding: 10px;
+text-align: center;
+color: #e1f0ec;background-color:#353839;
+}
+
+body{
+  background-color: #ededed;
+}
+
+footer > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer > a:hover {
+  padding: 4px;
+  background-color: #e1f0ec;
+  color: #353839;
+  text-decoration: underline;
+}
+
+figure {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+** end of undefined **
+
