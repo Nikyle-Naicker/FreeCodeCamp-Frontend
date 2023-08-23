@@ -1,0 +1,267 @@
+** start of undefined **
+
+<!Doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+      <header id="header" >
+        <h2>
+            Colour Cube
+            </h2>
+       <a class="logo" href="https://commons.wikimedia.org/wiki/File:Rubiks_cube_solved.jpg">  
+       <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Rubiks_cube_solved.jpg"  />
+       </a>
+        <nav id="nav-bar" >
+          
+        <ul>
+          <a href="#features" class="nav-link" ><li class="link" >Features</li></a>
+          <a href="#features" class="nav-link" ><li class="link" >Media</li></a>
+          <a href="#pricing" class="nav-link" ><li class="link" >Pricing</li></a>
+          </ul>
+        </nav>
+        </header>
+      <main>
+        <section id="features" >
+          <h3>Features
+            </h3>
+          <ul>
+            <li>Durable Pieces</li>
+            <li>Flake resistant colours</li>
+            <li>Quality Assurance</li>
+            <li>Easily replaceable pieces</li>
+            <li>Free Shipping in Gauteng</li>
+            </ul>
+          </section>
+        <section id="media" >
+          <h3>Media
+            </h3>
+            <div class="video" >
+            <iframe id="video" src="https://www.youtube.com/embed/7Ron6MN45LY" >
+              </iframe>
+              </div>
+          </section>
+        <section id="pricing" >
+          <h3>Pricing
+            </h3>
+            <div class="container" >
+              <div class="container-section" >
+                <div class="container-heading" >
+                <h5>3 x 3 Cube
+                </h5>
+                </div>
+                <div class="container-content" >
+                <p>
+                  R 80
+                  </p>
+                  </div>
+                </div>
+                <div class="container-section" >
+                  <div class="container-heading" >
+                    <h5>4 x 4 Cube
+                </h5>
+                    </div>
+                    <div class="container-content" >
+                <p>
+                  R 120
+                  </p>
+                  </div>
+                </div>
+                <div class="container-section" >
+                  <div class="container-heading" >
+                    <h5>100 x 100 Cube
+                </h5>
+                    </div>
+                    <div class="container-content" >
+                <p>
+                  R 800
+                  </p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section id="input" >
+            <form id="form" action="https://www.freecodecamp.com/email-submit" >
+              <label>Check Availability Now!
+                </label>
+                <input name="email" id="email" Placeholder="Enter your email here" type="email" >
+                </input>
+                <input id="submit" type="submit" >
+                  </input>
+              </form>
+            </section>
+        </main>
+        <footer>
+          <address>
+            freeCodeCamp
+            </address>
+          </footer>
+      </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  color: #1c1d1d;
+  background-color: #efefef;
+  margin: 0;
+}
+h2{
+  width: 20%;
+  padding: 10px 5px 0 15px;
+}
+header{
+  color: #efefef;
+  background-color: #252626;
+  display: flex; 
+  width: 100%;
+  align-items: center;
+
+}
+#header-img{
+  display: flex;
+  width: 50px;
+  padding: 10px 15px 0 5px;
+}
+nav{
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+.link{
+  display: inline-block;
+  list-style-type: none;
+  border: solid 1px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px;
+}
+.container {
+  width: 95%;
+  height: 100px;
+  border: solid 3px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+.container-section{
+  width: 34%;
+  border: solid 1px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.link:hover{
+  background-color: #efefef;
+  color: #252626;
+}
+#submit{
+  color: #FFFFFF;
+  background-color: #000000;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto;
+}
+a {
+  color: #efefef;
+  background-color: #252626;
+}
+h3{
+  border-bottom: solid 7px #8e9090;
+  padding: 0 10px 0 10px; 
+}
+h5{
+  text-align: center;
+  margin: 3px;
+  padding: 5px;
+}
+#submit:hover{
+background-color: #FFFFFF;
+  color: #000000;
+}
+#email{
+  background-color: #efefef;
+  color: #000000;
+  border: solid 2px;
+  width: 250px;
+  height: 25px;
+  margin: auto;
+}
+#email::placeholder{
+  color: #000000;
+}
+label{
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+}
+a {
+  color: #efefef;
+  background-color: #252626;
+}
+.container-heading{
+  background-color: #bebfbf;
+  width: 100%;
+  height: 40%;
+}
+.container-content{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+h3{
+  border-bottom: solid 7px #8e9090; 
+  height: 25px;
+  width: 100%;
+}
+h5{
+  text-align: center;
+}
+#submit:hover{
+background-color: #FFFFFF;
+  color: #000000;
+}
+.video{
+  display: flex;
+  justify-content: center;
+}
+#video{
+  height: 40%;
+  width: 60%;
+}
+.logo{
+  display: flex;
+  width: 50px;
+  height: 50px; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+footer{
+  background-color: #9ea0a0;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+address{
+  text-decoration: none;
+}
+
+** end of undefined **
+

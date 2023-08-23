@@ -1,0 +1,228 @@
+** start of undefined **
+
+<!Doctype html>
+  <html>
+    <head>
+      <title>Technical Documentation</title>
+      <meta charset="utf-8" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+      <main id="main-doc" >
+        <nav id="navbar" >
+          <header class="page-heading" >C# Documentation</header>
+          <ul class="nav-list" >
+          <a href="#introduction" class="nav-link" ><li class="link" >Introduction</li></a>
+         <a href="#basics" class="nav-link" > <li class="link" >Basics</li></a>
+         <a href="#variables" class="nav-link" > <li class="link" >Variables</li></a>
+         <a href="#data_types" class="nav-link" > <li class="link" >Data types</li></a>
+         <a  href="#reference" class="nav-link" > <li class="link" >Reference</li></a>
+         </ul>
+         <div class="empty">
+           </div>
+          </nav>
+        <section class="main-section" id="introduction" >
+		<header class="section-heading" id="intro" >Introduction</header>
+      <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language.
+        </p> 
+        <p>C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. </p>
+          <p>This tour provides an overview of the major components of the language in C# 11 and earlier. If you want to explore the language through interactive examples, try the introduction to C# tutorials.</p>
+          </section>
+          <section class="main-section" id="basics" >
+            <header class="section-heading" id="basic" >Basics</header>
+              <h5>Hello World</h5>
+              <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
+              <code>using System;
+
+class Hello
+{
+    static void Main()
+    {
+        // This line prints "Hello, World" 
+        Console.WriteLine("Hello, World");
+    }
+}</code>
+<h5>Program Structure</h5>
+<p>The following lines of code demonstrate the usual structure of C# code.</p>
+<code>namespace Acme.Collections;
+
+public class Stack<T>
+{
+    Entry _top;
+
+    public void Push(T data)
+    {
+        _top = new Entry(_top, data);
+    }
+
+    public T Pop()
+    {
+        if (_top == null)
+        {
+            throw new InvalidOperationException();
+        }
+        T result = _top.Data;
+        _top = _top.Next;
+
+        return result;
+    }
+
+    class Entry
+    {
+        public Entry Next { get; set; }
+        public T Data { get; set; }
+
+        public Entry(Entry next, T data)
+        {
+            Next = next;
+            Data = data;
+        }
+    }
+}</code>
+          </section>
+          <section class="main-section" id="variables" >
+            <header class="section-heading" id="var" >Variables</header>
+            <h5>Variables</h5>
+            <p>There are many different types of but here are a few examples</p>
+            <code>x(int) = 128; 
+              salary(long) = 100000000;
+              answer(bool) = true or false;
+              greeting(string) = H1 h0w are you doing;
+              </code>
+            
+          </section>
+          <section class="main-section" id="data_types">
+            <header class="section-heading" id="data" >Data Types</header>
+            <p>A type defines the structure and behavior of any data in C#. The declaration of a type may include its members, base type, interfaces it implements, and operations permitted for that type. A variable is a label that refers to an instance of a specific type.</p>
+            <ul>
+              <li>Value types</li>
+            <ul>
+              <li>Simple types</li>
+              <ul>
+                <li><p>Signed integral: sbyte, short, int, long</p></li>
+                <li><p>Unsigned integral: byte, ushort, uint, ulong</p></li>
+                <li><p>Unicode characters: char, which represents a UTF-16 code unit</p></li>
+                <li><p>IEEE binary floating-point: float, double</p></li>
+                </ul>
+              <li><p>Enum types</p></li>
+              <li><p>Struct types</p></li>
+              <li><p>Nullable value types</p></li>
+              <li><p>Tuple value types</p></li>
+              </ul>
+              </ul>
+              <p>examples:</p>
+              <code>public class Point
+{
+    public int X { get; }
+    public int Y { get; }
+    
+    public Point(int x, int y) => (X, Y) = (x, y);
+}</code>
+<code>var p1 = new Point(0, 0);
+var p2 = new Point(10, 20);
+</code>
+          </section>
+          <section class="main-section" id="reference" >
+            <header class="section-heading" id="reference-heading" >Reference</header>
+            <p>All information is taken from <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" >Microsoft</a>.</p>
+          </section>
+      </main>
+    </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  margin: 0;
+  line-height: 1.5;
+}
+#navbar{
+  border: solid 3px;
+  border-bottom: 0px; 
+  min-width: 210px;
+  width: 25%;
+  height: 100%;
+  float: left;
+  color: white;
+  background-color: #010140;
+  position: fixed;
+}
+.page-heading{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 24px;
+}
+#main-doc{
+  width: 100%;
+  font-family: Arial;
+}
+.nav-list{
+  border: solid 1px white;
+  padding: 0;
+  
+}
+.link{
+  border-top: solid 1px white;
+  color: white;
+  padding: 10px;
+  list-style-type: none;
+}
+.link:hover{
+  color: #010140;
+  background-color: white;
+}
+
+.main-section{
+  margin-left: 26%;
+  position: relative;
+  padding: 0 15px  ;
+}
+.section-heading{
+  border-bottom: solid 3px #aeb0b0;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+a{
+  text-decoration: none;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #efefef;
+    padding: 15px;
+    border-radius: 5px;
+    border: solid 1px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+@media only screen and (max-width: 785px){
+#navbar{
+   width: 98%;
+   height: 200px;
+   overflow-y: scroll;
+   position: static;
+}
+.main-section{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#intro{
+  position: relative;
+  height: 50px;
+  
+}
+}
+
+** end of undefined **
+
